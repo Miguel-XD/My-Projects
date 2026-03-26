@@ -1,0 +1,203 @@
+object FRM_Votacao: TFRM_Votacao
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Vota'#231#227'o Iniciada'
+  ClientHeight = 332
+  ClientWidth = 1096
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -22
+  Font.Name = 'Source Code Pro Medium'
+  Font.Style = [fsBold]
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  TextHeight = 28
+  object Image1: TImage
+    Left = 424
+    Top = 8
+    Width = 305
+    Height = 289
+  end
+  object BTN_Confimar: TBitBtn
+    Left = 175
+    Top = 219
+    Width = 137
+    Height = 41
+    Caption = 'Confirmar'
+    TabOrder = 0
+    OnClick = BTN_ConfimarClick
+  end
+  object BTN_1: TBitBtn
+    Left = 64
+    Top = 8
+    Width = 49
+    Height = 42
+    Caption = '1'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Source Code Pro Medium'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+  end
+  object BTN_2: TBitBtn
+    Left = 119
+    Top = 8
+    Width = 50
+    Height = 42
+    Caption = '2'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Source Code Pro Medium'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+  end
+  object BTN_3: TBitBtn
+    Left = 175
+    Top = 8
+    Width = 50
+    Height = 42
+    Caption = '3'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Source Code Pro Medium'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+  end
+  object BTN_4: TBitBtn
+    Left = 63
+    Top = 56
+    Width = 50
+    Height = 44
+    Caption = '4'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Source Code Pro Medium'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+  end
+  object BTN_5: TBitBtn
+    Left = 119
+    Top = 56
+    Width = 50
+    Height = 44
+    Caption = '5'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Source Code Pro Medium'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+  end
+  object BTN_6: TBitBtn
+    Left = 175
+    Top = 56
+    Width = 50
+    Height = 44
+    Caption = '6'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Source Code Pro Medium'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+  end
+  object BTN_7: TBitBtn
+    Left = 64
+    Top = 106
+    Width = 49
+    Height = 44
+    Caption = '7'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Source Code Pro Medium'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+  end
+  object BTN_8: TBitBtn
+    Left = 119
+    Top = 106
+    Width = 50
+    Height = 44
+    Caption = '8'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Source Code Pro Medium'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+  end
+  object BTN_0: TBitBtn
+    Left = 119
+    Top = 156
+    Width = 50
+    Height = 44
+    Caption = '0'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Source Code Pro Medium'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 9
+  end
+  object BTN_9: TBitBtn
+    Left = 175
+    Top = 106
+    Width = 50
+    Height = 44
+    Caption = '9'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Source Code Pro Medium'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 10
+  end
+  object BitBtn1: TBitBtn
+    Left = 99
+    Top = 266
+    Width = 97
+    Height = 33
+    Caption = 'Branco'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -22
+    Font.Name = 'BTN_Branco'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 11
+  end
+  object BTN_Corrige: TBitBtn
+    Left = 11
+    Top = 219
+    Width = 118
+    Height = 37
+    Caption = 'Corrige'
+    TabOrder = 12
+  end
+  object EDT_Foto: TEdit
+    Left = 520
+    Top = 106
+    Width = 113
+    Height = 36
+    ReadOnly = True
+    TabOrder = 13
+  end
+end

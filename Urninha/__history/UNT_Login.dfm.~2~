@@ -1,0 +1,49 @@
+object FRM_Login: TFRM_Login
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Urninha Eletr'#244'nica'
+  ClientHeight = 441
+  ClientWidth = 624
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -24
+  Font.Name = 'Source Code Pro Medium'
+  Font.Style = [fsBold]
+  Position = poDesktopCenter
+  TextHeight = 31
+  object LBL_CPF: TLabel
+    Left = 188
+    Top = 142
+    Width = 233
+    Height = 31
+    Caption = 'Digite seu CPF:'
+  end
+  object EDT_CPF: TEdit
+    Left = 188
+    Top = 179
+    Width = 233
+    Height = 34
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Source Code Pro Medium'
+    Font.Style = [fsBold]
+    MaxLength = 14
+    ParentFont = False
+    TabOrder = 0
+  end
+  object BTN_Entrar: TBitBtn
+    Left = 236
+    Top = 219
+    Width = 129
+    Height = 34
+    Cursor = crHandPoint
+    Caption = 'Entrar'
+    Kind = bkOK
+    NumGlyphs = 2
+    TabOrder = 1
+  end
+end

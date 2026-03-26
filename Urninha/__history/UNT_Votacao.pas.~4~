@@ -1,0 +1,59 @@
+unit UNT_Votacao;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls;
+
+type
+  TFRM_Votacao = class(TForm)
+    BTN_Confimar: TBitBtn;
+    BTN_1: TBitBtn;
+    BTN_2: TBitBtn;
+    BTN_3: TBitBtn;
+    BTN_4: TBitBtn;
+    BTN_5: TBitBtn;
+    BTN_6: TBitBtn;
+    BTN_7: TBitBtn;
+    BTN_8: TBitBtn;
+    BTN_0: TBitBtn;
+    BTN_9: TBitBtn;
+    BitBtn1: TBitBtn;
+    BTN_Corrige: TBitBtn;
+    EDT_Foto: TEdit;
+    Image1: TImage;
+    procedure BTN_ConfimarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FRM_Votacao: TFRM_Votacao;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFRM_Votacao.BTN_ConfimarClick(Sender: TObject);
+begin
+  Close ;
+end;
+
+procedure TFRM_Votacao.FormCreate(Sender: TObject);
+begin
+  BRANCO    := 0;
+  NULO      := 0;
+  TOTAL     := 0;
+  PESSOA1   := 0;
+  PESSOA2   := 0;
+  PESSOA3   := 0;
+  PESSOA4   := 0;
+  PESSOA5   := 0;
+  PESSOA6   := 0;
+end;
+
+end.

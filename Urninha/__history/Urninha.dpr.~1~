@@ -1,0 +1,14 @@
+program Urninha;
+
+uses
+  Vcl.Forms,
+  UNT_Login in 'UNT_Login.pas' {FRM_Login};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFRM_Login, FRM_Login);
+  Application.Run;
+end.

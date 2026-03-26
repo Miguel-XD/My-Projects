@@ -1,0 +1,105 @@
+unit UNT_Memoria;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TFRM_Memoria = class(TForm)
+    BTM1: TButton;
+    BTM2: TButton;
+    BTM9: TButton;
+    BTM10: TButton;
+    BTM11: TButton;
+    BTM12: TButton;
+    BTM13: TButton;
+    BTM14: TButton;
+    BTM15: TButton;
+    BTM16: TButton;
+    BTM3: TButton;
+    BTM4: TButton;
+    BTM5: TButton;
+    BTM6: TButton;
+    BTM7: TButton;
+    BTM8: TButton;
+    LBL_Status: TLabel;
+    BTM_Reiniciar: TButton;
+    procedure IniciarJogo;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+    cartas: array[1..16] of Integer; //Armazena os valores das cartas
+    botoes: array[1..16] of TButton; //Referência para os botões ba interface
+    primeiroSelecionado, segundoSelecionado: Integer; //Índices das cartas selecionadas
+    paresEncontrados: Integer; //Contador de pares encontrados
+    bloqueado: Boolean; //Para bloquear cliques temporariamente
+  public
+    { Public declarations }
+  end;
+
+var
+  FRM_Memoria: TFRM_Memoria;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFRM_Memoria.FormCreate(Sender: TObject);
+begin
+  botoes[1] := BTM1;
+  botoes[2] := BTM2;
+  botoes[3] := BTM3;
+  botoes[4] := BTM4;
+  botoes[5] := BTM5;
+  botoes[6] := BTM6;
+  botoes[7] := BTM7;
+  botoes[8] := BTM8;
+  botoes[9] := BTM9;
+  botoes[10] := BTM10;
+  botoes[11] := BTM11;
+  botoes[12] := BTM12;
+  botoes[13] := BTM13;
+  botoes[14] := BTM14;
+  botoes[15] := BTM15;
+  botoes[16] := BTM16;
+end;
+
+procedure TFRM_Memoria.IniciarJogo;
+var
+  i, j, temp : Integer;
+begin
+  paresEncontrados  := 0;
+  primeiroSelecionado := 0;
+  segundoSelecionado  := 0;
+  bloqueado := False;
+
+  //Criar 2 pares de números
+  for i := 1 to 8 do
+    begin
+      cartas[i] := i;
+      cartas[i + 8] := i;
+    end;
+
+    //Embaralhar as cartas
+    Randomize;
+    for i := 16 downto 2 do
+      begin
+        j := Random(i) + 1;
+        temp := cartas[i];
+        cartas[i] := cartas[j];
+        cartas[j] := temp;
+      end;
+
+    //Inicializer os botões: limpar texto e habilitar
+    for i := 1 to 16 do
+      begin
+        botoes[i].Caption := '';
+        botoes[].Enabled := True;
+      end;
+
+    LBL_Status.Caption := 'Clique em duas cartas para encontrar os pares';
+end;
+
+end.

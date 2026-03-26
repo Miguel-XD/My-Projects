@@ -1,0 +1,39 @@
+unit UNT_Login;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TFRM_Login = class(TForm)
+    LBL_CPF: TLabel;
+    EDT_CPF: TEdit;
+    BTN_Entrar: TBitBtn;
+    procedure BTN_EntrarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FRM_Login: TFRM_Login;
+
+implementation
+Uses UNT_Votacao ;
+
+{$R *.dfm}
+
+procedure TFRM_Login.BTN_EntrarClick(Sender: TObject);
+var CPF: String ;
+begin
+  CPF := EDT_CPF.Text ;
+
+  Application.CreateForm(TFRM_Votacao, FRM_Votacao); //Criar o Form em Memória
+  FRM_Votacao.ShowModal ; //Exibe o Form criado na tela
+  FRM_Votacao.Release ; //Retira o Form da Memória
+end;
+
+end.

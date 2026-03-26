@@ -1,0 +1,40 @@
+unit UNT_Memoria;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TFRM_Memoria = class(TForm)
+    BTM1: TButton;
+    BTM2: TButton;
+    BTM9: TButton;
+    BTM10: TButton;
+    BTM11: TButton;
+    BTM12: TButton;
+    BTM13: TButton;
+    BTM14: TButton;
+    BTM15: TButton;
+    BTM16: TButton;
+    BTM3: TButton;
+    BTM4: TButton;
+    BTM5: TButton;
+    BTM6: TButton;
+    BTM7: TButton;
+    BTM8: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FRM_Memoria: TFRM_Memoria;
+
+implementation
+
+{$R *.dfm}
+
+end.

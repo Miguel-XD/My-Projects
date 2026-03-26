@@ -1,0 +1,50 @@
+object FRM_Login: TFRM_Login
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Urninha Eletr'#244'nica'
+  ClientHeight = 424
+  ClientWidth = 618
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -40
+  Font.Name = 'Impact'
+  Font.Style = []
+  Position = poDesktopCenter
+  TextHeight = 48
+  object LBL_CPF: TLabel
+    Left = 188
+    Top = 102
+    Width = 233
+    Height = 48
+    Caption = 'Digite seu CPF'
+  end
+  object EDT_CPF: TEdit
+    Left = 176
+    Top = 156
+    Width = 257
+    Height = 56
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -40
+    Font.Name = 'Impact'
+    Font.Style = []
+    MaxLength = 14
+    ParentFont = False
+    TabOrder = 0
+  end
+  object BTN_Entrar: TBitBtn
+    Left = 228
+    Top = 218
+    Width = 142
+    Height = 48
+    Cursor = crHandPoint
+    Caption = 'Entrar'
+    Kind = bkOK
+    NumGlyphs = 2
+    TabOrder = 1
+    OnClick = BTN_EntrarClick
+  end
+end

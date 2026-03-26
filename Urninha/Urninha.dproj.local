@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/05/16 20:35:47.000.362,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/05/16 20:53:24.000.869,I:\Miguel DS-Noite\Desenvolvimento de Sistemas\Urninha\UNT_Login.dfm=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2025/05/16 20:53:24.000.869,I:\Miguel DS-Noite\Desenvolvimento de Sistemas\Urninha\UNT_Login.pas=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/05/16 20:53:50.000.116,I:\Miguel DS-Noite\Desenvolvimento de Sistemas\Urninha\Urninha.dproj=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2025/05/16 20:57:11.000.330,=I:\Miguel DS-Noite\Desenvolvimento de Sistemas\Urninha\Unit1.pas</Transaction>
+    <Transaction>2025/05/16 21:11:25.000.588,I:\Miguel DS-Noite\Desenvolvimento de Sistemas\Urninha\UNT_Votacao.dfm=I:\Miguel DS-Noite\Desenvolvimento de Sistemas\Urninha\Unit1.dfm</Transaction>
+    <Transaction>2025/05/16 21:11:25.000.588,I:\Miguel DS-Noite\Desenvolvimento de Sistemas\Urninha\UNT_Votacao.pas=I:\Miguel DS-Noite\Desenvolvimento de Sistemas\Urninha\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

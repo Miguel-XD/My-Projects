@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/08/08 20:45:22.000.185,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/08/08 22:28:17.000.733,C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas=E:\Ruan 2DS\Desenvolvimento de Sistemas\Jogo\UNT_Jogo.pas</Transaction>
+    <Transaction>2025/08/08 22:28:17.000.733,C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.dfm=E:\Ruan 2DS\Desenvolvimento de Sistemas\Jogo\UNT_Jogo.dfm</Transaction>
+    <Transaction>2025/08/08 22:28:33.000.625,C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\Ruan 2DS\Desenvolvimento de Sistemas\Jogo\PegaPega.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

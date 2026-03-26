@@ -1,0 +1,27 @@
+unit UNT_Login;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TFRM_Login = class(TForm)
+    LBL_CPF: TLabel;
+    EDT_CPF: TEdit;
+    BTN_Entrar: TBitBtn;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FRM_Login: TFRM_Login;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,122 @@
+/* Importando fontes do Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap');
+
+/* Declarando variaveis de cores para facilitar */
+
+:root {
+    --fundo-pagina: #0d0d12;
+    --fundo-calc: #1a1a24;
+    --texto-claro: #ffffff;
+    --texto-escuro: #888894;
+    --neon-ciano: #00f3ff;
+    --neon-rosa: #ff00ea;
+    --sombra-padrao: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Reset basico e configuracao inicial */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--fundo-pagina);
+    color: var(--texto-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* A caraca da Calculadora */
+.calculadora-container {
+    background-color: var(--fundo-calc);
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: var(--sombra-padrao), 0 0 15px rgba(0, 243, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+/* Titulo com efeito brilhante */
+
+.calculadora-container h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--neon-rosa);
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.1);
+}
+
+/* Estilizacao dos campos de digitar os numeros */
+
+input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #252533;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: var(--neon-ciano);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]::placeholder {
+    color: var(--texto-escuro);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Efeito quando clica no campo de texto */
+
+input[type="number"]:focus {
+    border-color: var(--neon-rosa);
+    box-shadow: 0 0 15px rgba(255, 0, 234, 0.3);
+    background-color: #1a1a24;
+}
+
+/* Organizando os botoes */
+
+.botoes-operacao {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #252533;
+    color: var(--texto-claro);
+    border: 1px solid rgba(0, 243, 255, 0.1);
+    padding: 15px 0;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+button:hover {
+    border-color: var(--neon-rosa);
+    color: var(--neon-ciano);
+    box-shadow: 0 0 12px rgba(255, 0, 234, 0.5);
+    transform: translateY(-2px);
+}
+
+.resultado-box {
+    color: var(--texto-claro);
+    font-size: 1.1rem;
+}
+
+#resultado {
+    color: var(--neon-rosa);
+    font-family: 'Orbitron', sans-serif;
+}
