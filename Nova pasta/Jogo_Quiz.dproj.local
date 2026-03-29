@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject>
-	<Transactions>
-    <Transaction>2025/08/29 20:40:38.000.116,=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2025/08/29 20:43:33.000.593,C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\UNT_Quiz.pas</Transaction>
-    <Transaction>2025/08/29 20:43:33.000.593,C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\UNT_Quiz.dfm</Transaction>
-    <Transaction>2025/08/29 20:44:16.000.493,C:\Users\Aluno\Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\Miguel Arquivos\ETEC-DS\Desenvolvimento de Sistemas\Nova pasta\Jogo_Quiz.dproj</Transaction>
-  </Transactions>
-</BorlandProject>
